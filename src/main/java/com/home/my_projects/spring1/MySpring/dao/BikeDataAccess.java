@@ -45,7 +45,7 @@ public class BikeDataAccess implements BikeDAO {
                 .map(bike -> {
                 int indexOfBikeToUpdate = database.indexOf(bike);
                 if (indexOfBikeToUpdate>=0){
-                    database.set(indexOfBikeToUpdate,new Bike(updateBike.getMaxSpeed(),name));
+                    database.set(indexOfBikeToUpdate,new Bike(bike.getMaxSpeed(), updateBike.getName()));
                     return 1;
                 }
                 return 0;
