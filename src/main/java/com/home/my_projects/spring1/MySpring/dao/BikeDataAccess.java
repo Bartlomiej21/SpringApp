@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-@Repository("myOwnDatabase")
+@Repository("myQualifier")
 public class BikeDataAccess implements BikeDAO {
 
     private static List<Bike> database = new ArrayList<>();
